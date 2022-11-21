@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <title>Работа с таблицами</title>
+    <meta name="description" content="Домашнее задание №3 Группа: FE127 Долгий Сергей">
+    <meta name="keywords" content="таблицы" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+    <h1>Работа с таблицами</h1>
+<br>
+<body>  
+
+<table class="table"  cellpadding="4" cellspacing="0">
+    <thead>
+<tr class="header" >
+    <td rowspan="3"><strong>Ученики</strong></td>
+    <th colspan="6">Период обучения</th>
+</tr>
+
+<tr class="header" >
+    <th colspan="2">I четверть</th>
+    <th colspan="2">II четверть</th>
+    <th colspan="2">III четверть</th>     
+</tr>
+
+<tr class="header">
+    <td><strong>Информатика</strong></td>
+    <td><strong>Математика</strong></td>
+    <td><strong>Информатика</strong></td>
+    <td><strong>Математика</strong></td>
+    <td><strong>Информатика</strong></td>
+    <td><strong>Математика</strong></td>
+</tr>
+
+</thead>
+
+<tbody>
+
+
+<tr class = "aktiv">
+    <td>Иванов Дима</td>
+    <td>4</td>
+    <td>4</td>
+    <td>5</td>
+    <td>5</td>
+    <td>5</td>
+    <td>3</td>
+</tr>
+<tr>
+    <td>Петров Михаил</td>
+    <td>4</td>
+    <td>3</td>
+    <td>5</td>
+    <td>4</td>
+    <td>3</td>
+    <td>5</td>
+</tr>
+<tr class = "aktiv">
+    <td>Голубев Пётр</td>
+    <td>5</td>
+    <td>5</td>
+    <td>5</td>
+    <td>4</td>
+    <td>4</td>
+    <td>5</td>
+</tr>
+<tr>
+    <td> Гордеев Иван</td>
+    <td>4</td>
+    <td>58</td>
+    <td>3</td>
+    <td>5</td>
+    <td>4</td>
+    <td>5</td>
+</tr>
+</tbody>
+<tfoot>
+<tr style="background-color: rgba(14, 173, 247, 0.849);">
+    <td colspan="5" align="right"><strong>Итого (средняя оценка)</strong></td>
+    <td text-align="center"><strong>4</strong></td>
+    <td text-align="center"><strong>4,5</strong></td>
+</tr>
+
+</tfoot>
+</table>
+
+<h1>Работа с формами</h1>
+
+<div class="columns">
+    <div class="obj">
+    <form method="POST">
+        <fieldset>
+            <legend>Общая информация</legend>
+        <input type="text" placeholder="Фамилия" required maxlength="15"></input>
+        <input type="text" placeholder="Имя" required maxlength="15"></input>
+        <input type="text" placeholder="Отчество" required maxlength="15"></input>
+        <input type="date" placeholder="Дата рождения"></input>
+        <select name="sex">
+                <option value="s1">Муж.</option>
+                <option value="s3">Жен.</option>
+            </select> 
+        <input type="file" placeholder="прикрепите файл"></input>
+        <button type="submit">Отправка формы</button>
+        <button type="reset">Очистить форму</button>
+    </fielset>
+</form>
+        </div>
+        <div class="obj2">
+            <form method="POST">
+                <fieldset class="contakt">
+                    <legend>Контактная информация</legend>
+                <input type="tel" placeholder="Телефон" required maxlength="14">
+                <input type="mail" placeholder="Эл.почта" required maxlength="21">
+                <textarea placeholder="Адрес проживания" maxlength="100"></textarea>
+                <p> Выберите город проживания:</p>
+                <select name="sity">
+                        <option value="s1">Минск</option>
+                        <option value="s3">Витебск</option>
+                        <option value="s3">Брест</option>
+                        <option value="s3">Гомель</option>
+                        <option value="s3">Могилев</option>
+                        <option value="s3">Гродно</option>
+                    </select>
+                    <button type="submit">Отправка формы</button>
+                    <button type="reset">Очистить форму</button>
+    </fieldset>
+    </form>
+        </div>
+        <div class="obj3">
+            <form method="POST">
+                <fieldset>
+                    <legend>Образование<br>(наименование учреждений)</legend>
+       
+            <input type="text" placeholder="Высшее" required maxlength="50"></input>
+            <input type="text" placeholder="Среднее" required maxlength="50"></input>
+            <input type="text" placeholder="Дополнительное" required maxlength="50"></input>
+            <input type="text" placeholder="Курсы" required maxlength="10"></input>
+            <button type="submit">Отправка формы</button>
+            <button type="reset">Очистить форму</button>
+        </fieldset>
+        </form>
+        </div>
+        <div class="obj4">
+            <form method="POST">
+                <fieldset class="career">
+                    <legend>Карьера (в порядке убывания)</legend>
+        
+        <input type="text" placeholder="Место работы 1" required maxlength="50"></input>
+        <p> Дата начала работы <input type="date" placeholder="Дата начала работы"><br> Дата окончания работы <input type="date" placeholder="Дата окончания работы"></p>
+        <input type="text" placeholder="Место работы 2" required maxlength="50"></input>
+        <p> Дата начала работы <input type="date" placeholder="Дата начала работы"><br> Дата окончания работы <input type="date" placeholder="Дата окончания работы"></p>
+        <input type="text" placeholder="Место работы 3" required maxlength="50"></input>
+        <p> Дата начала работы <input type="date" placeholder="Дата начала работы"><br> Дата окончания работы <input type="date" placeholder="Дата окончания работы"></p>
+        <button type="submit">Отправка формы</button>
+        <button type="reset">Очистить форму</button>
+        </fieldset>
+    </form>
+        </div>
+        
+        <div class="obj5">
+            <form method="POST">
+                <fieldset>
+                    <legend>О себе</legend>
+<textarea placeholder="Введите данные о себе" maxlength="100"></textarea>
+<button type="submit">Отправка формы</button>
+<button type="reset">Очистить форму</button>
+    </fieldset>    
+    </form>
+        </div>
+</div>
+</body>
+</html>
